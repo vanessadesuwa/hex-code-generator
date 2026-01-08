@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hex Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <div class="logo">
+          <h1>Palette<span>Gen</span></h1>
+        </div>
+        <div class="nav">
+          <div class="tools">
+            <p>Tools</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="signs">
+            <p>Sign in</p>
+            <button>Sign up</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="body">
+        <div class="title">
+          <h1>Hex Color Code Generator</h1>
+          <p>Generate random hex color codes with ease!</p>
+        </div>
+        <div class="generator">
+          <div class="color-display" id="colorDisplay">
+            <div id="firstColor" class="colors">
+              <h3 id="firstHexDisplay">HEX CODE</h3>
+            </div>
+            <div id="secondColor" class="colors">
+              <h3 id="secondHexDisplay">HEX CODE</h3>
+            </div>
+            <div id="thirdColor" class="colors">
+              <h3 id="thirdHexDisplay">HEX CODE</h3>
+            </div>
+          </div>
+          <button id="generateBtn">Generate Color</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
