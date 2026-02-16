@@ -137,10 +137,26 @@
   align-items: center;
   column-gap: 2rem;
 }
-.colors {
-  width: fit-content;
-  height: auto;
-  padding: 4rem 5rem;
-  background-color: #c2c2c2;
-  text-align: center;
+.color-box {
+  width: 15%; /* Adjust width to fit 5 items with gap */
+  height: 200px; /* Fixed height for consistency */
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.color-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.color-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
